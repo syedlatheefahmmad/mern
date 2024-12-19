@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVPSIT - Prasad V. Potluri Siddhartha Institute of Technology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        
+
+        header {
+            background-color: #003865;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header img {
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #0074cc;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        .main h2 {
+            text-align: center;
+            color: #003865;
+        }
+
+        .main p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 10px;
+            background-color: #003865;
+            color: white;
+            margin: 0;
+        }
+
+        .card p {
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+    <script>
+        function openPopup(url) {
+            window.open(url, "_blank", "width=600,height=400,scrollbars=yes,resizable=yes");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="PVPSIT Logo">
+        <h1>Prasad V. Potluri Siddhartha Institute of Technology</h1>
+    </header>
+
+    <nav>
+        <a href="about.html" target="about.html">About</a>
+        <a href="departments.html" target="_blank">Departments</a>
+        <a href="admissions.html" target="admissions.html">Admissions</a>
+        <a href="contact.html" target="_blank">Contact</a>
+    </nav>
+    
+
+    <div class="main">
+        
+        <img src="https://www.pvpsiddhartha.ac.in/new_images/amazon%2021.jpg" alt="home">
+        <section id="departments">
+            <h2>COURSES OFFERED</h2>
+            <div class="cards">
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_cse.html')">
+                    <img src="cselogo.png" alt="CSE Department">
+                    <h3>Computer Science Engineering</h3>
+                    <p>Department of Computer Science Engineering</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_it.html')">
+                    <img src="it.png" alt="IT Department">
+                    <h3>Information Technology</h3>
+                    <p>Department of Information Technology</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/ecenew/eceindex.html')">
+                    <img src="ecelogo.png" alt="ECE Department">
+                    <h3>Electronics & Communication Engineering</h3>
+                    <p>Department of Electronics & Communication Engineering</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_mech.html')">
+                    <img src="mech.png" alt="Mechanical Department">
+                    <h3>Mechanical Engineering</h3>
+                    <p>Department of Mechanical Engineering</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_civil.html')">
+                    <img src="civil.png" alt="Civil Department">
+                    <h3>Civil Engineering</h3>
+                    <p>Department of Civil Engineering</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_eee.html')">
+                    <img src="eee.png" alt="EEE Department">
+                    <h3>Electrical & Electronics Engineering</h3>
+                    <p>Department of Electrical & Electronics Engineering</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_csm.html')">
+                    <img src="aimllogo.png" alt="AI & ML Department">
+                    <h3>AI & ML</h3>
+                    <p>Department of AI & ML</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_csd.html')">
+                    <img src="ds.png" alt="Data Science Department">
+                    <h3>CSE (Data Science)</h3>
+                    <p>Department of CSE (Data Science)</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_mba.html')">
+                    <img src="mba.png" alt="MBA Department">
+                    <h3>MBA</h3>
+                    <p>Department of MBA</p>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+    
+    <footer>
+        <section id="contact">
+            <div class="contact">
+                <h2>Contact Us</h2>
+                
+                <p>Email: <a href="mailto:principal@pvpsiddhartha.ac.in">principal@pvpsiddhartha.ac.in</a></p>
+                
+        </section>
+        <p>&copy; 2024 Prasad V. Potluri Siddhartha Institute of Technology. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments | PVPSIT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #003865;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056a1;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #004080;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #003865;
+            text-align: center;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            color: #003865;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #666;
+            font-size: 14px;
+        }
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        footer {
+            background-color: #003865;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function openPopup(url) {
+            window.open(url, "_blank");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Prasad V Potluri Siddhartha Institute of Technology</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="departments.html">Departments</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section id="departments">
+            <h2>Departments</h2>
+            <div class="cards">
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_cse.html')">
+                    <img src="cselogo.png" alt="CSE Department">
+                    <h3>Computer Science Engineering</h3>
+                    <p>Department of Computer Science Engineering</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_it.html')">
+                    <img src="it.png" alt="IT Department">
+                    <h3>Information Technology</h3>
+                    <p>Department of Information Technology</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/ecenew/eceindex.html')">
+                    <img src="ecelogo.png" alt="ECE Department">
+                    <h3>Electronics & Communication Engineering</h3>
+                    <p>Department of Electronics & Communication Engineering</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_mech.html')">
+                    <img src="mech.png" alt="Mechanical Department">
+                    <h3>Mechanical Engineering</h3>
+                    <p>Department of Mechanical Engineering</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_civil.html')">
+                    <img src="civil.png" alt="Civil Department">
+                    <h3>Civil Engineering</h3>
+                    <p>Department of Civil Engineering</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_eee.html')">
+                    <img src="eee.png" alt="EEE Department">
+                    <h3>Electrical & Electronics Engineering</h3>
+                    <p>Department of Electrical & Electronics Engineering</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_csm.html')">
+                    <img src="aimllogo.png" alt="AI & ML Department">
+                    <h3>AI & ML</h3>
+                    <p>Department of AI & ML</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_csd.html')">
+                    <img src="ds.png" alt="Data Science Department">
+                    <h3>CSE (Data Science)</h3>
+                    <p>Department of CSE (Data Science)</p>
+                </div>
+                <div class="card" onclick="openPopup('https://www.pvpsiddhartha.ac.in/department_mba.html')">
+                    <img src="mba.png" alt="MBA Department">
+                    <h3>MBA</h3>
+                    <p>Department of MBA</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <div class="contact">
+                <h2>Contact Us</h2>
+                
+                <p>Email: <a href="mailto:principal@pvpsiddhartha.ac.in">principal@pvpsiddhartha.ac.in</a></p>
+                
+        </section>
+        <p>&copy; 2024 Prasad V Potluri Siddhartha Institute of Technology. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
